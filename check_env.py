@@ -26,10 +26,10 @@ has = dict(
     # examples
     matplotlib='0.0.0',
     # optional
-    pyina='0.0.0',
-    pyconstraints='0.0.0',
-    pulp='0.0.0',
-    cvxopt='0.0.0', # cvxpy ???
+   #pyina='0.0.0',
+   #pyconstraints='0.0.0',
+   #pulp='0.0.0',
+   #cvxopt='0.0.0', # cvxpy ???
     sqlalchemy='0.0.0',
 )
 
@@ -100,7 +100,7 @@ for module,executables in run.items():
 
 # final report
 if not returns:
-    print('\nOK.')
+    print('OK.')
 
 sys.exit(returns)
 
