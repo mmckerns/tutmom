@@ -69,17 +69,22 @@ Requirements
 To be able to run the examples, demos, and exercises in this tutorial,
 the following packages must be installed::
 
-    numpy >= 0.0.0,
-    scipy >= 0.0.0,
-    sympy >= 0.0.0,
-    mystic >= 0.0.0,
-    pathos >= 0.0.0,
-    matplotlib >= 0.0.0
+    numpy >= 1.0,
+    scipy >= 0.6.0,
+    sympy >= 0.6.7,
+    matplotlib >= 0.91,
+    pox >= 0.2.2.dev0,
+    dill >= 0.2.4.dev0,
+    multiprocess >= 0.70.3,
+    ppft >= 1.6.4.5,
+    klepto >= 0.1.1,
+    pathos >= 0.2a1.dev0,
+    mystic >= 0.2a2.dev0
 
 
 and optionally::
 
-    sqlalchemy >= 0.0.0
+    sqlalchemy >= 0.8.4
 
 
 
@@ -91,8 +96,10 @@ All packages can be installed with `pip`::
     >$ pip install setuptools
     >$ pip install numpy
     >$ pip install sympy
-    >$ pip install mystic
-    >$ pip install pathos
+    >$ pip install git+https://github.com/uqfoundation/pox.git@master
+    >$ pip install git+https://github.com/uqfoundation/dill.git@master
+    >$ pip install git+https://github.com/uqfoundation/pathos.git@master
+    >$ pip install git+https://github.com/uqfoundation/mystic.git@master
     >$ pip install matplotlib
     >$ pip install scipy
 
@@ -128,8 +135,10 @@ The following steps were used by the tutorial author to test on Windows:
     # fix bug where conda doesn't respect all `sys.argv`
     #   regedit HKEY_CLASSES_ROOT\Applications\python27.exe\shell\open\command
     #   regedit HKEY_CLASSES_ROOT\py_auto_file\shell\open\command
-    >$ pip install pathos
-    >$ pip install mystic
+    >$ pip install git+https://github.com/uqfoundation/pox.git@master
+    >$ pip install git+https://github.com/uqfoundation/dill.git@master
+    >$ pip install git+https://github.com/uqfoundation/pathos.git@master
+    >$ pip install git+https://github.com/uqfoundation/mystic.git@master
 
 
 
@@ -141,4 +150,12 @@ To test your installation, change to the tutorial directory, and run::
     >$ python check_env.py
     OK.
 
+
+If you choose not install all optional dependencies, you will see a warning::
+
+    >$ python check_env.py 
+    sqlalchemy:: No module named sqlalchemy
+
+
+Feel free to ignore warnings for optional dependencies.
 
