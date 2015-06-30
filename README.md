@@ -79,7 +79,7 @@ the following packages must be installed::
 
 and optionally::
 
-    sqlalchemy >= 0.0.0,
+    sqlalchemy >= 0.0.0
 
 
 
