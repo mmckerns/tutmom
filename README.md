@@ -8,7 +8,9 @@ predictive sciences. Tools for optimization, however, have not changed much in
 the past 40 years -- until very recently. The abundance of parallel computing
 resources has stimulated a shift away from using reduced models to solve
 statistical and predictive problems, and toward more direct methods for solving
-high-dimensional nonlinear optimization problems. This tutorial will introduce
+high-dimensional nonlinear optimization problems.
+
+This tutorial will introduce
 modern tools for solving optimization problems -- beginning with traditional
 methods, and extending to solving high-dimensional non-convex optimization
 problems with highly nonlinear constraints. We will start by introducing the
@@ -26,7 +28,9 @@ results caching and archiving, dynamic real-time optimization, and dimensional
 reduction. Next we will discuss new optimization methods that leverage parallel
 computing to perform blazingly-fast global optimizations and n-dimensional
 global searches. Finally, we will close with applications of global
-optimization in statistics and quantitative finance. The audience need not be
+optimization in statistics and quantitative finance.
+
+The audience need not be
 an expert in optimization, but should have interest in solving hard real-world
 optimization problems. We will begin with a walk through some introductory
 optimizations, learning how to build confidence in understanding your results.
