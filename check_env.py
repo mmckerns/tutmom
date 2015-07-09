@@ -36,6 +36,8 @@ has = dict(
 
 
 # executables
+# list: At least one item is expected
+# tuple: All items are expected
 run = dict(
     # optimization
     mystic=('mystic_log_reader.py','mystic_model_plotter.py',
@@ -80,6 +82,18 @@ for module,version in has.items():
         returns += 1
 
 
+def executable_exist(module, prog):
+    try:
+        assert which(prog)
+#           process = Popen([prog, '--help'], stderr=STDOUT, stdout=PIPE)
+#           process.wait()
+        return True
+    except (OSError, AssertionError):
+        from sys import exc_info
+        print("%s:: Executable '%s' not found" % (module, prog))
+        #print("%s:: %s" % (prog, exc_info()[1]))
+        return False
+
 
 # check required executables
 try:
@@ -88,24 +102,23 @@ try:
 except ImportError:
     sys.exit(returns)
 for module,executables in run.items():
-    for prog in reversed(executables):
-        try:
-            assert which(prog)
-#           process = Popen([prog, '--help'], stderr=STDOUT, stdout=PIPE)
-#           process.wait()
-            if isinstance(executables, list): break  # just requires one
-        except (OSError, AssertionError):
-            if isinstance(executables, list) and \
-               prog != executables[0]: pass
-            from sys import exc_info
-            print("%s:: Executable '%s' not found" % (module, prog))
-           #print("%s:: %s" % (prog, exc_info()[1]))
+    if isinstance(executables, list):
+        found = False
+        for executable in executables:
+            if executable_exist(module, executable):
+                found = True
+                break
+        if not found:
             returns += 1
-
+    else:
+        for executable in executables:
+             if not executable_exist(module, executable):
+                 returns += 1
 
 # final report
 if not returns:
-    print('OK.')
+    print('-'*50)
+    print('OK.  All required items installed.')
 
 sys.exit(returns)
 
