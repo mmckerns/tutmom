@@ -77,7 +77,7 @@ the following packages must be installed::
     scipy >= 0.6.0,
     sympy >= 0.6.7,
     matplotlib >= 0.91,
-    pox >= 0.2.2.dev0,
+    pox >= 0.2.2,
     dill >= 0.2.4.dev0,
     multiprocess >= 0.70.3,
     ppft >= 1.6.4.5,
@@ -100,7 +100,6 @@ All packages can be installed with `pip`::
     >$ pip install setuptools
     >$ pip install numpy
     >$ pip install sympy
-    >$ pip install git+https://github.com/uqfoundation/pox.git@master
     >$ pip install git+https://github.com/uqfoundation/dill.git@master
     >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install git+https://github.com/uqfoundation/mystic.git@master
@@ -139,7 +138,6 @@ The following steps were used by the tutorial author to test on Windows:
     # fix bug where conda doesn't respect all `sys.argv`
     #   regedit HKEY_CLASSES_ROOT\Applications\python27.exe\shell\open\command
     #   regedit HKEY_CLASSES_ROOT\py_auto_file\shell\open\command
-    >$ pip install git+https://github.com/uqfoundation/pox.git@master
     >$ pip install git+https://github.com/uqfoundation/dill.git@master
     >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install git+https://github.com/uqfoundation/mystic.git@master

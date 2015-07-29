@@ -16,7 +16,7 @@ has = dict(
     # parallel computing
     pathos='0.2a1.dev0',
     # dependencies
-    pox='0.2.2.dev0',
+    pox='0.2.2',
     dill='0.2.4.dev0',
     klepto='0.1.1',
     numpy='1.0',
