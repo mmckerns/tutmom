@@ -17,7 +17,7 @@ has = dict(
     pathos='0.2a1.dev0',
     # dependencies
     pox='0.2.2',
-    dill='0.2.4.dev0',
+    dill='0.2.4',
     klepto='0.1.1',
     numpy='1.0',
     sympy='0.6.7',
