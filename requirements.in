@@ -3,5 +3,7 @@ matplotlib
 numpy
 -e git+https://github.com/uqfoundation/pathos.git@master#egg=pathos
 scipy
+sqlalchemy
 sympy
+
 
