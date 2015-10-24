@@ -1,0 +1,7 @@
+matplotlib
+-e git+https://github.com/uqfoundation/mystic.git@master#egg=mystic
+numpy
+-e git+https://github.com/uqfoundation/pathos.git@master#egg=pathos
+scipy
+sympy
+
