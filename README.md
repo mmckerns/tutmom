@@ -97,18 +97,9 @@ Installation
 
 All packages can be installed with `pip`::
 
-    >$ pip install setuptools
-    >$ pip install numpy
-    >$ pip install sympy
-    >$ pip install git+https://github.com/uqfoundation/pathos.git@master
-    >$ pip install git+https://github.com/uqfoundation/mystic.git@master
-    >$ pip install matplotlib
-    >$ pip install scipy
-
-
-and optionally::
-
-    >$ pip install sqlalchemy
+    >$ virtualenv env
+    >$ source env/bin/activate
+    >$ pip install -r requirements.txt
 
 
 The `pip` installs of `numpy`, `matplotlib`, and `scipy` often fail.
