@@ -14,7 +14,7 @@ has = dict(
     scipy='0.6.0',
     mystic='0.2a2.dev0',
     # parallel computing
-    pathos='0.2a1.dev0',
+    pathos='0.2.0',
     # dependencies
     pox='0.2.2',
     dill='0.2.4',

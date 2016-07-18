@@ -82,7 +82,7 @@ the following packages must be installed::
     multiprocess >= 0.70.3,
     ppft >= 1.6.4.5,
     klepto >= 0.1.1,
-    pathos >= 0.2a1.dev0,
+    pathos >= 0.2.0,
     mystic >= 0.2a2.dev0
 
 
@@ -100,7 +100,7 @@ All packages can be installed with `pip`::
     >$ pip install setuptools
     >$ pip install numpy
     >$ pip install sympy
-    >$ pip install git+https://github.com/uqfoundation/pathos.git@master
+    >$ pip install pathos
     >$ pip install git+https://github.com/uqfoundation/mystic.git@master
     >$ pip install matplotlib
     >$ pip install scipy
@@ -137,7 +137,7 @@ The following steps were used by the tutorial author to test on Windows:
     # fix bug where conda doesn't respect all `sys.argv`
     #   regedit HKEY_CLASSES_ROOT\Applications\python27.exe\shell\open\command
     #   regedit HKEY_CLASSES_ROOT\py_auto_file\shell\open\command
-    >$ pip install git+https://github.com/uqfoundation/pathos.git@master
+    >$ pip install pathos
     >$ pip install git+https://github.com/uqfoundation/mystic.git@master
 
 
