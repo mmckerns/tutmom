@@ -12,7 +12,7 @@ import sys
 has = dict(
     # optimization
     scipy='0.6.0',
-    mystic='0.2a2.dev0',
+    mystic='0.3.0',
     # parallel computing
     pathos='0.2.0',
     # dependencies
@@ -26,7 +26,7 @@ has = dict(
     # examples
     matplotlib='0.91',
     # optional
-   #pyina='0.2a1.dev0',
+   #pyina='0.2.0.dev0',
    #pulp='1.6.0',
    #cvxopt='1.1.0', # cvxpy ???
    #Numberjack='1.1.0',

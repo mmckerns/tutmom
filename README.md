@@ -83,7 +83,7 @@ the following packages must be installed::
     ppft >= 1.6.4.5,
     klepto >= 0.1.1,
     pathos >= 0.2.0,
-    mystic >= 0.2a2.dev0
+    mystic >= 0.3.0
 
 
 and optionally::
@@ -101,7 +101,7 @@ All packages can be installed with `pip`::
     >$ pip install numpy
     >$ pip install sympy
     >$ pip install pathos
-    >$ pip install git+https://github.com/uqfoundation/mystic.git@master
+    >$ pip install mystic
     >$ pip install matplotlib
     >$ pip install scipy
 
@@ -138,7 +138,7 @@ The following steps were used by the tutorial author to test on Windows:
     #   regedit HKEY_CLASSES_ROOT\Applications\python27.exe\shell\open\command
     #   regedit HKEY_CLASSES_ROOT\py_auto_file\shell\open\command
     >$ pip install pathos
-    >$ pip install git+https://github.com/uqfoundation/mystic.git@master
+    >$ pip install mystic
 
 
 
