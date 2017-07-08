@@ -77,13 +77,15 @@ the following packages must be installed::
     scipy >= 0.6.0,
     sympy >= 0.6.7,
     matplotlib >= 0.91,
-    pox >= 0.2.2,
-    dill >= 0.2.4,
-    multiprocess >= 0.70.3,
-    ppft >= 1.6.4.5,
-    klepto >= 0.1.1,
-    pathos >= 0.2.0,
-    mystic >= 0.3.0
+    cvxopt >= 1.1.0,
+    jupyter >= 1.0,
+    pox >= 0.2.3,
+    dill >= 0.2.7,
+    multiprocess >= 0.70.5,
+    ppft >= 1.6.4.7,
+    klepto >= 0.1.4,
+    pathos >= 0.2.1,
+    mystic >= 0.3.1
 
 
 and optionally::
@@ -104,6 +106,8 @@ All packages can be installed with `pip`::
     >$ pip install mystic
     >$ pip install matplotlib
     >$ pip install scipy
+    >$ pip install cvxopt
+    >$ pip install jupyter
 
 
 and optionally::
@@ -130,6 +134,8 @@ The following steps were used by the tutorial author to test on Windows:
     >$ conda install scipy
     >$ conda install matplotlib
     >$ conda install sympy
+    >$ conda install cvxopt
+    >$ conda install jupyter
     >$ conda install sqlalchemy
     # get https://github.com/uqfoundation/pox/blob/master/tools/pythonstartup
     # save as ~\.python (also add as PYTHONSTARTUP to environment variables)

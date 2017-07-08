@@ -13,23 +13,24 @@ import sys
 has = dict(
     # optimization
     scipy='0.6.0',
-    mystic='0.3.0',
+    mystic='0.3.1',
     # parallel computing
-    pathos='0.2.0',
+    pathos='0.2.1',
     # dependencies
-    pox='0.2.2',
-    dill='0.2.4',
-    klepto='0.1.1',
+    pox='0.2.3',
+    dill='0.2.7',
+    klepto='0.1.4',
     numpy='1.0',
     sympy='0.6.7',
-    ppft='1.6.4.5',
-    multiprocess='0.70.3',
+    ppft='1.6.4.7',
+    multiprocess='0.70.5',
     # examples
     matplotlib='0.91',
+    jupyter='1.0',
+    cvxopt='1.1.0',
     # optional
    #pyina='0.2.0.dev0',
    #pulp='1.6.0',
-   #cvxopt='1.1.0', # cvxpy ???
    #Numberjack='1.1.0',
    #python-constraints='1.2', # installs as 'constraints'
     sqlalchemy='0.8.4',
@@ -49,6 +50,7 @@ run = dict(
     # dependencies
     ppft=('ppserver.py',),
     # examples
+    ### jupyter-notebook
     # optional
    #pyina=('sync','cp','rm','ezpool.py','ezscatter.py',),
 )
